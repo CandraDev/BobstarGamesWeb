@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+}
+
+.nav-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(92deg, rgb(80, 50, 250), rgb(2, 0, 143));
+    border: solid 1px black;
+}
+
+.nav-logo {
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.nav-items li {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.nav-items li a {
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items li a:hover {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1800ms;
+
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+    -webkit-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+    -moz-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+}
+
+.sidebar-container, .faq-bar {
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px 0 40px 0;
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.10);
+
+}
+
+.sidebar-container .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-container .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-container iframe {
+    border-radius: 20px;
+}
+
+.sidebar-container .links {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 30px;
+}
+
+
+
+.faq-bar {
+    margin: 31% 0 120px 21px;
+}
+
+.sidebar-container ul, .faq-bar ul {
+    list-style-type: none;
+}
+
+.sidebar-container ul li h3{
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sidebar-container ul li{
+    padding-top: 14px;
+}
+
+.sidebar-container ul li a{
+    padding: 14px 0 4px 30px;
+}
+
+.sidebar-container ul li a, .faq-bar ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+}
+
+.heroimg-container {
+    display: flex;
+    padding: 67px 0 0 0;
+    width: 100%;
+
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimg-container img {
+    width: 95%;
+    border-radius: 20px;
+}
+
+.main-container {
+    display: flex;
+    
+
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    padding: 30px;
+    width: 60%;
+    margin-right: 40px;
+    width: 95%;
+
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.10);
+}
+
+.news-container .picture {
+    margin: 0 40px 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-container .buttons {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    column-gap: 200px;
+}
+
+.news-container .buttons button {
+    padding:  20px;
+    text-align: center;
+    background-color: rgb(61, 32, 224);
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.news-container .buttons button:active {
+    position: relative;
+    top: 6px;
+}
+
+.news-container .buttons button:hover {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1800ms;
+
+    padding: 15px;
+    border-radius: 27px;
+    text-decoration: none;
+
+    box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+    -webkit-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+    -moz-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+}
+
+.left-container {
+    padding: 50px;
+}
+
+.right-container {
+    height: 1000px;
+    padding-right: 40px;
+}
+
+
+.catalogues-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.catalogues-container {
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 90px 90px 90px;
+    column-gap: 130px;
+    row-gap: 200px;
+    margin-top: 40px;
+}
+
+.catalogues {
+    background-color: white;
+    justify-content: center;
+    border-radius: 30px;
+    
+    height: 220px;
+    width: 175px;
+
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.30);
+    -moz-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.30);
+}
+
+.catalogues h4 {
+    color: blue;
+}
+
+.catalogues h5 {
+    color: gray;
+}
+
+.catalogues:hover {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1800ms;
+    
+    cursor: pointer;
+    box-shadow: 10px 10px 20px 10px rgba(41, 221, 227, 0.7);
+    -webkit-box-shadow: 10px 10px 20px 10px rgba(41, 221, 227, 0.7);
+    -moz-box-shadow: 10px 10px 20px 10px rgba(41, 221, 227, 0.7);
+}
+
+.catalogue-hero {
+
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    margin-bottom: 14px;
+}
+
+.catalogue-hero img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.catalogue-detail {
+    
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 80px;
+    text-indent: 20px;
+    bottom: 0px;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(92deg, rgb(80, 50, 250), rgb(2, 0, 143));
+    border: solid 1px black;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
